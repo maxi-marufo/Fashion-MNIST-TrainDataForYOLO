@@ -1,5 +1,5 @@
 import keras
-from keras.datasets import mnist
+from keras.datasets import fashion_mnist
 
 import numpy as np
 from PIL import Image, ImageOps
@@ -44,7 +44,7 @@ def save_image(filename, data_array):
     return convert((img.width,img.height), (float(x), float(x+w), float(y), float(y+w)))
 
 # the data, shuffled and split between train and test sets
-(x_train, y_train), (x_test, y_test) = mnist.load_data()
+(x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
 
 DIR_NAME = "JPEGImages"
 if os.path.exists(DIR_NAME) == False:
