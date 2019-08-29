@@ -29,7 +29,7 @@ make
 1. generat MNIST images and labels.
 
 ```sh
-python mnist_to_jpg_and_label.py
+python fashion_mnist_to_jpg_and_label.py
 ```
 
 2. generate train.txt and test.txt
